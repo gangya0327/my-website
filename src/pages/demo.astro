@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Count from '../components/Count.astro'
+import { Counter } from '../components/Counter'
+
+const count = 1
+const users = ['yml', 'peter', 'raven']
+---
+
+<Layout title="标题内容">
+  count: {count}
+  <ul>
+    {
+      users.map((name) => {
+        return <li>{name}</li>
+      })
+    }
+  </ul>
+  <Count count={3} />
+  <Counter counter={3} client:load/>
+</Layout>
