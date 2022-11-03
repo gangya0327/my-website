@@ -1,0 +1,1 @@
+import{d as a,c as u,g as $,a as g,i as _,r as d,t as x}from"./chunks/web.256d8706.js";const b=x("<div>counter: <!#><!/><button>click</button></div>");function k(r){const[e,i]=u(r.counter);return(()=>{const t=$(b),l=t.firstChild,c=l.nextSibling,[n,o]=g(c.nextSibling),s=n.nextSibling;return _(t,e,n,o),s.$$click=()=>i(e()+1),d(),t})()}a(["click"]);export{k as Counter};
